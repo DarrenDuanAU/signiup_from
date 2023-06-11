@@ -1,0 +1,43 @@
+body {
+  color:#555;
+}
+
+form {
+  max-width: 580px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #f4f7f8;
+  border-radius: 8px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 30px;
+}
+
+legend {
+  margin-bottom: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+legend::before {
+  content: '';
+  background-color: green;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+
+
+

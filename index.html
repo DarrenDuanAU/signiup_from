@@ -5,9 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <form action="xxx.php" method="post">
+  <form action="google.php" method="post">
     <h1>Sign up</h1>
     <fieldset>
       <legend> Your basic info</legend>
@@ -35,6 +36,44 @@
 
       <label for="password">Password:</label>
       <input class="textInput" type="password" id="password">
+    </fieldset>
+    <br/>
+
+    <fieldset>
+      <legend>Other Details</legend>
+      <label for="date">Birth Date:</label>
+      <input class="textInput" type="date" id="date"/>
+    
+      <label for="gender">Gender:</label>
+
+      <input type="radio" id="male" name="gender">
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender">
+      <lale for="female">Female</label>
+
+      <input type="radio" id="other" name="gender">
+      <lale for="other">Other</label>
+    </fieldset>
+
+    <fieldset>
+      <label for="country">Country</label>
+      <select name="country" id="country">
+        <option value="AU" selected>Australia</option>
+        <option value="CN">China</option>
+        <option value="US">USA</option>
+        <option value="UK">UK</option>
+        <option value="TR">Turkey</option>
+      </select>
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <div>
+        <input type="checkbox" id="terms" required />
+        <label for="terms">I'm accepting Terms and Conditions</label>
+      </div>
+      <button type="submit">Sign Up</button>
     </fieldset>
   </form>
 </body>
